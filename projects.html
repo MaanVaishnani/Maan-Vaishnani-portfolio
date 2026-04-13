@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects | Maan Vaishnani</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cabinet+Grotesk:wght@400;500;700;800&family=Instrument+Sans:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <a href="index.html" class="nav-logo">MV<span class="dot">.</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="projects.html" class="active">Projects</a></li>
+    <li><a href="skills.html">Skills</a></li>
+    <li><a href="dashboards.html">Dashboards</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+</nav>
+
+<section class="page-hero">
+  <div class="container">
+    <span class="section-tag">Portfolio</span>
+    <h1>Projects built<br>with real data.</h1>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+
+    <!-- PROJECT 1 -->
+    <div class="project-detail" id="ipl">
+      <div class="pd-header">
+        <div class="pd-num">01</div>
+        <div class="pd-meta">
+          <h2>IPL Data Analytics Pipeline</h2>
+          <div class="project-tag-list">
+            <span class="ptag">Python</span>
+            <span class="ptag">JSON Processing</span>
+            <span class="ptag">PostgreSQL</span>
+            <span class="ptag">Power BI</span>
+            <span class="ptag">Groq LLaMA3</span>
+            <span class="ptag">Streamlit</span>
+          </div>
+        </div>
+        <a href="https://github.com/1079maan/IPL_AI_ANALYST.git" target="_blank" class="btn-outline pd-link">View on GitHub ↗</a>
+      </div>
+      <div class="pd-body">
+        <div class="pd-desc">
+          <p>A full-scale cricket analytics platform covering data ingestion, SQL analytics, Power BI dashboards, and an AI-powered chatbot — all deployed on Streamlit Cloud with a Supabase PostgreSQL backend.</p>
+          <h4>What I built</h4>
+          <ul>
+            <li>Collected and processed <strong>76,000+ IPL ball-by-ball records</strong> across 10+ seasons in JSON format and stored them in a normalized PostgreSQL (Supabase) database.</li>
+            <li>Performed advanced SQL analysis using <strong>window functions, CTEs, and subqueries</strong> to generate 10+ player performance KPIs and team insights.</li>
+            <li>Built a <strong>5-page interactive Power BI dashboard</strong> with 15+ visualizations covering match trends, batting, and bowling analytics.</li>
+            <li>Developed and deployed an <strong>AI-powered chatbot using Groq LLaMA3</strong> that converts natural language questions into SQL queries on Streamlit Cloud.</li>
+          </ul>
+        </div>
+        <div class="pd-stats">
+          <div class="pd-stat"><span class="pds-num">76K+</span><span class="pds-label">Records processed</span></div>
+          <div class="pd-stat"><span class="pds-num">10+</span><span class="pds-label">KPIs generated</span></div>
+          <div class="pd-stat"><span class="pds-num">15+</span><span class="pds-label">Visualizations</span></div>
+          <div class="pd-stat"><span class="pds-num">5</span><span class="pds-label">Dashboard pages</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-divider"></div>
+
+    <!-- PROJECT 2 -->
+    <div class="project-detail" id="brts">
+      <div class="pd-header">
+        <div class="pd-num">02</div>
+        <div class="pd-meta">
+          <h2>BRTS Transport Delay Analytics</h2>
+          <div class="project-tag-list">
+            <span class="ptag">PostgreSQL</span>
+            <span class="ptag">SQL</span>
+            <span class="ptag">Python</span>
+            <span class="ptag">Selenium</span>
+            <span class="ptag">Geopy</span>
+            <span class="ptag">Power BI</span>
+            <span class="ptag">DAX</span>
+          </div>
+        </div>
+        <a href="https://github.com/1079maan/BRTS_Transport_Analyst_Project" target="_blank" class="btn-outline pd-link">View on GitHub ↗</a>
+      </div>
+      <div class="pd-body">
+        <div class="pd-desc">
+          <p>A transport delay analytics platform for Ahmedabad's BRTS network, combining automated data collection, geospatial encoding, normalized SQL design, and Power BI dashboards for route-level decision-making.</p>
+          <h4>What I built</h4>
+          <ul>
+            <li>Designed a <strong>normalized PostgreSQL database</strong> for 5+ entities — routes, stops, vehicles, trips, and passenger feedback.</li>
+            <li>Analyzed transport delays across <strong>20+ routes</strong> using advanced SQL queries including joins, subqueries, and window functions to identify high-impact bottlenecks.</li>
+            <li>Automated route data collection using <strong>Python (Selenium)</strong> and geocoded <strong>50+ stop locations</strong> using Geopy (OpenStreetMap).</li>
+            <li>Built an interactive Power BI dashboard with <strong>DAX measures</strong> to visualize route performance, delay trends, and passenger feedback KPIs.</li>
+          </ul>
+        </div>
+        <div class="pd-stats">
+          <div class="pd-stat"><span class="pds-num">20+</span><span class="pds-label">Routes analyzed</span></div>
+          <div class="pd-stat"><span class="pds-num">50+</span><span class="pds-label">Stops geocoded</span></div>
+          <div class="pd-stat"><span class="pds-num">5+</span><span class="pds-label">DB entities</span></div>
+          <div class="pd-stat"><span class="pds-num">DAX</span><span class="pds-label">KPI measures</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-divider"></div>
+
+    <!-- PROJECT 3 -->
+    <div class="project-detail" id="placemate">
+      <div class="pd-header">
+        <div class="pd-num">03</div>
+        <div class="pd-meta">
+          <h2>PlaceMate — Placement Prediction & Analytics</h2>
+          <div class="project-tag-list">
+            <span class="ptag">Python</span>
+            <span class="ptag">Pandas</span>
+            <span class="ptag">NumPy</span>
+            <span class="ptag">Scikit-learn</span>
+            <span class="ptag">Flask</span>
+            <span class="ptag">HTML/CSS/JS</span>
+          </div>
+        </div>
+        <a href="https://github.com/1079maan/Student-Placement-Prediction-using-ML-model" target="_blank" class="btn-outline pd-link">View on GitHub ↗</a>
+      </div>
+      <div class="pd-body">
+        <div class="pd-desc">
+          <p>An end-to-end ML system that predicts student placement probability in real-time, backed by a Flask REST API and an interactive analytics dashboard.</p>
+          <h4>What I built</h4>
+          <ul>
+            <li>Built a <strong>classification ML model using Scikit-learn</strong> to predict student placement probability from 200+ student records.</li>
+            <li>Performed data cleaning, <strong>feature engineering</strong>, and EDA using Pandas and NumPy to optimize input data quality.</li>
+            <li>Developed a <strong>Flask REST API</strong> for real-time predictions and integrated results into an interactive web dashboard.</li>
+          </ul>
+        </div>
+        <div class="pd-stats">
+          <div class="pd-stat"><span class="pds-num">200+</span><span class="pds-label">Student records</span></div>
+          <div class="pd-stat"><span class="pds-num">ML</span><span class="pds-label">Classification model</span></div>
+          <div class="pd-stat"><span class="pds-num">REST</span><span class="pds-label">API deployed</span></div>
+          <div class="pd-stat"><span class="pds-num">EDA</span><span class="pds-label">Feature engineered</span></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <span class="nav-logo">MV<span class="dot">.</span></span>
+    <div class="footer-links">
+      <a href="https://linkedin.com/in/maan-vaishnani" target="_blank">LinkedIn</a>
+      <a href="https://github.com/1079maan" target="_blank">GitHub</a>
+      <a href="mailto:maanvaishnani2004@gmail.com">Email</a>
+    </div>
+    <span class="footer-copy">© 2026 Maan Vaishnani</span>
+  </div>
+</footer>
+
+<

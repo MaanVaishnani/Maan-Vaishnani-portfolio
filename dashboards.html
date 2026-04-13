@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboards | Maan Vaishnani</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cabinet+Grotesk:wght@400;500;700;800&family=Instrument+Sans:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <a href="index.html" class="nav-logo">MV<span class="dot">.</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="skills.html">Skills</a></li>
+    <li><a href="dashboards.html" class="active">Dashboards</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+</nav>
+
+<section class="page-hero">
+  <div class="container">
+    <span class="section-tag">Power BI</span>
+    <h1>Live Dashboards<br>& Visualizations.</h1>
+    <p class="page-hero-sub">Interactive Power BI dashboards built from real datasets — click any card to open the live report.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+
+    <div class="db-grid">
+
+      <!-- DASHBOARD 1 -->
+      <div class="db-card">
+        <div class="db-preview-wrap">
+          <iframe
+            src="https://app.powerbi.com/view?r=eyJrIjoiNWU1MGVhZDItNDc3MS00NzNlLWEyZmUtZGEyODY5ZjMxMDFkIiwidCI6IjU2ODFiZGZlLTk3NmMtNGE5Ny05MGU2LWExOGE5YTNjNDlmOCJ9"
+            class="db-iframe"
+            allowFullScreen
+            title="IPL NEXUS Dashboard">
+          </iframe>
+          <div class="db-overlay" onclick="openDashboard('https://app.powerbi.com/view?r=eyJrIjoiNWU1MGVhZDItNDc3MS00NzNlLWEyZmUtZGEyODY5ZjMxMDFkIiwidCI6IjU2ODFiZGZlLTk3NmMtNGE5Ny05MGU2LWExOGE5YTNjNDlmOCJ9')">
+            <span class="db-open-btn">Open Live Dashboard ↗</span>
+          </div>
+        </div>
+        <div class="db-info">
+          <div class="db-badge">IPL NEXUS</div>
+          <h3>IPL Data Analytics Dashboard</h3>
+          <p>5-page interactive report covering match trends, batting & bowling KPIs, player performance, and season comparisons across 76,000+ ball-by-ball records.</p>
+          <div class="db-tags">
+            <span class="ptag">DAX</span>
+            <span class="ptag">15+ Visualizations</span>
+            <span class="ptag">10+ KPIs</span>
+            <span class="ptag">76K Records</span>
+          </div>
+          <a href="https://app.powerbi.com/view?r=eyJrIjoiNWU1MGVhZDItNDc3MS00NzNlLWEyZmUtZGEyODY5ZjMxMDFkIiwidCI6IjU2ODFiZGZlLTk3NmMtNGE5Ny05MGU2LWExOGE5YTNjNDlmOCJ9" target="_blank" class="btn-outline db-btn">Open in Power BI ↗</a>
+        </div>
+      </div>
+
+      <!-- DASHBOARD 2 -->
+      <div class="db-card">
+        <div class="db-preview-wrap">
+          <iframe
+            src="https://app.powerbi.com/view?r=eyJrIjoiZGMxZmVmZmUtYTEyOC00M2ZjLWI5YTctYTcwYWI2NDU5ZWY5IiwidCI6IjU2ODFiZGZlLTk3NmMtNGE5Ny05MGU2LWExOGE5YTNjNDlmOCJ9"
+            class="db-iframe"
+            allowFullScreen
+            title="BRTS Transport Dashboard">
+          </iframe>
+          <div class="db-overlay" onclick="openDashboard('https://app.powerbi.com/view?r=eyJrIjoiZGMxZmVmZmUtYTEyOC00M2ZjLWI5YTctYTcwYWI2NDU5ZWY5IiwidCI6IjU2ODFiZGZlLTk3NmMtNGE5Ny05MGU2LWExOGE5YTNjNDlmOCJ9')">
+            <span class="db-open-btn">Open Live Dashboard ↗</span>
+          </div>
+        </div>
+        <div class="db-info">
+          <div class="db-badge">BRTS Analytics</div>
+          <h3>Transport Delay Analytics Dashboard</h3>
+          <p>Route performance and delay trend analysis for Ahmedabad's BRTS network — covering 20+ routes, passenger feedback KPIs, and stop-level delay breakdowns.</p>
+          <div class="db-tags">
+            <span class="ptag">DAX</span>
+            <span class="ptag">20+ Routes</span>
+            <span class="ptag">Delay KPIs</span>
+            <span class="ptag">Passenger Feedback</span>
+          </div>
+          <a href="https://app.powerbi.com/view?r=eyJrIjoiZGMxZmVmZmUtYTEyOC00M2ZjLWI5YTctYTcwYWI2NDU5ZWY5IiwidCI6IjU2ODFiZGZlLTk3NmMtNGE5Ny05MGU2LWExOGE5YTNjNDlmOCJ9" target="_blank" class="btn-outline db-btn">Open in Power BI ↗</a>
+        </div>
+      </div>
+
+      <!-- DASHBOARD 3 -->
+      <div class="db-card">
+        <div class="db-preview-wrap">
+          <iframe
+            src="https://app.powerbi.com/view?r=eyJrIjoiMTFjM2QzZDItZGI1Zi00M2NjLTgxYTktNGU4ZTkzOTRkZDBkIiwidCI6IjU2ODFiZGZlLTk3NmMtNGE5Ny05MGU2LWExOGE5YTNjNDlmOCJ9"
+            class="db-iframe"
+            allowFullScreen
+            title="Online Course Dashboard">
+          </iframe>
+          <div class="db-overlay" onclick="openDashboard('https://app.powerbi.com/view?r=eyJrIjoiMTFjM2QzZDItZGI1Zi00M2NjLTgxYTktNGU4ZTkzOTRkZDBkIiwidCI6IjU2ODFiZGZlLTk3NmMtNGE5Ny05MGU2LWExOGE5YTNjNDlmOCJ9')">
+            <span class="db-open-btn">Open Live Dashboard ↗</span>
+          </div>
+        </div>
+        <div class="db-info">
+          <div class="db-badge">Online Courses</div>
+          <h3>Online Course Analytics Dashboard</h3>
+          <p>Enrollment trends, course performance metrics, and learner analytics visualized for an online education dataset using Power BI interactive reports.</p>
+          <div class="db-tags">
+            <span class="ptag">DAX</span>
+            <span class="ptag">Enrollment Trends</span>
+            <span class="ptag">Course KPIs</span>
+          </div>
+          <a href="https://app.powerbi.com/view?r=eyJrIjoiMTFjM2QzZDItZGI1Zi00M2NjLTgxYTktNGU4ZTkzOTRkZDBkIiwidCI6IjU2ODFiZGZlLTk3NmMtNGE5Ny05MGU2LWExOGE5YTNjNDlmOCJ9" target="_blank" class="btn-outline db-btn">Open in Power BI ↗</a>
+        </div>
+      </div>
+
+      <!-- DASHBOARD 4 -->
+      <div class="db-card">
+        <div class="db-preview-wrap">
+          <iframe
+            src="https://app.powerbi.com/view?r=eyJrIjoiZjUxMzQyN2YtNWFiYS00YzBjLThiZDctYWZkNjVjYWJmNzRjIiwidCI6IjU2ODFiZGZlLTk3NmMtNGE5Ny05MGU2LWExOGE5YTNjNDlmOCJ9"
+            class="db-iframe"
+            allowFullScreen
+            title="T20 Cricket Dashboard">
+          </iframe>
+          <div class="db-overlay" onclick="openDashboard('https://app.powerbi.com/view?r=eyJrIjoiZjUxMzQyN2YtNWFiYS00YzBjLThiZDctYWZkNjVjYWJmNzRjIiwidCI6IjU2ODFiZGZlLTk3NmMtNGE5Ny05MGU2LWExOGE5YTNjNDlmOCJ9')">
+            <span class="db-open-btn">Open Live Dashboard ↗</span>
+          </div>
+        </div>
+        <div class="db-info">
+          <div class="db-badge">T20 Cricket</div>
+          <h3>T20 Cricket Analytics Dashboard</h3>
+          <p>Player statistics, match outcomes, and team performance analysis across T20 cricket matches — visualized with DAX-powered measures and dynamic filters.</p>
+          <div class="db-tags">
+            <span class="ptag">DAX</span>
+            <span class="ptag">Player Stats</span>
+            <span class="ptag">Match Analysis</span>
+          </div>
+          <a href="https://app.powerbi.com/view?r=eyJrIjoiZjUxMzQyN2YtNWFiYS00YzBjLThiZDctYWZkNjVjYWJmNzRjIiwidCI6IjU2ODFiZGZlLTk3NmMtNGE5Ny05MGU2LWExOGE5YTNjNDlmOCJ9" target="_blank" class="btn-outline db-btn">Open in Power BI ↗</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <span class="nav-logo">MV<span class="dot">.</span></span>
+    <div class="footer-links">
+      <a href="https://linkedin.com/in/maan-vaishnani" target="_blank">LinkedIn</a>
+      <a href="https://github.com/1079maan" target="_blank">GitHub</a>
+      <a href="mailto:maanvaishnani2004@gmail.com">Email</a>
+    </div>
+    <span class="footer-copy">© 2026 Maan Vaishnani</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+function openDashboard(url) {
+  window.open(url, '_blank');
+}
+</script>
+</body>
+</html>
